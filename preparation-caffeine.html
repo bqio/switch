@@ -128,13 +128,19 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/exploits">Взлом</a></li>
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/get-started">Методы<br>взлома</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/emunand">EmuNAND</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/addons">Полезные<br> инструкции</a></li>
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/faq">FAQ</a></li>
@@ -143,25 +149,10 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
-          
-            
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/games">Установка<br>игр</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/hbl">Запуск<br>HBL</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/exploits">Методы<br>взлома</a></li>
-          
-            
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/update-to-latest">Безопасное<br>обновление</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/site-navigation">Навигация по сайту</a></li>
@@ -310,52 +301,31 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
       
 	  
 	  	
-        <p>В этом разделе нас ждёт практическое применение теоретических знаний, полученных в прошлый раз. Каждый из пунктов <strong>обязателен</strong> к выполнению, если вы хотите получить максимум от прошивки своей консоли. Каждый из этих пунктов самодостаточен. Если вы по какой-то причине ранее не выполнили любой из них, вы можете вернуться к этому позже.</p>
-
-<p>Вот краткий план того, чем мы займёмся:</p>
+        <p>Каждый из пунктов этой инструкции <strong>обязателен</strong> к выполнению, если вы хотите получить максимум от прошивки своей консоли. Каждый из этих пунктов самодостаточен. Если вы по какой-то причине ранее не выполнили любой из них, вы можете вернуться к этому позже.</p>
 
 <p class="notice--warning">После выполнения каждой инструкции из нижеследующего списка, возвращайтесь на эту страницу и переходите к следующему пункту. Если какие-то из действий вы уже выполняли, повторно их делать не нужно.</p>
 
+<p>Вот краткий план того, чем мы займёмся:</p>
+
 <ol>
-  <li><a href="cfw" target="blank_">Выбор кастомной прошивки</a> - на данном этапе вам необходимо определиться какой <span class="tooltip_container">
- кастом
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Модифицированное программное обеспечение консоли, написанное энтузиастами, позволяет делать вещи, недоступные пользователям официальных прошивок, например, запускать неподписанные приложения. В контексте прошивки свитча мы будем называть имеющееся программное обеспечение кастомной прошивкой, хотя, чисто технически, это не так
-     </span>
- </span>
-</span> вы будете использовать в дальнейшем, поскольку методы запуска и методы создания <span class="tooltip_container">
- EmuNAND
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Полная копия NAND, расположенная на карте памяти или в самом же NAND (реже). Применяется для того, чтобы оставить официальную прошивку в максимально нетронутом виде. Чаще всего применяется для того, чтобы запускать в эмунанде кастом. В случае использования программного эксплойта, который требует для запуска кастома строго определённой версии OFW, эмунанд можно служить цели запуска официальной прошивки. Например, на приставке используется аппаратная уязвимость, поэтому пользователь может использовать чистый и не изменённый NAND обновив его до последней прошивки. Это будет назваться SysNAND. Он может использоваться для официальных игр и даже для онлайна. А в эмунанде сделать полную копию сиснанда, но использовать его уже с кастомной прошивкой и без доступа к сервисам Nintendo. 
-     </span>
- </span>
-</span> у них сильно разные. Просто прочитайте эту страницу и остановитесь на одной из двух прошивок. Делать пока ничего не надо.</li>
-  <li><a href="caffeine" target="blank_">Установка и настройка Caffeine и запуск hekate с его помощью</a> - настраиваем точку входа и делаем первый запуск, чтобы попасть в <span class="tooltip_container">
- кастомный загрузчик
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
-     </span>
- </span>
-</span>. Всегда помните, что вы спокойно можете извлекать и вставлять обратно карту памяти находясь в hekate!</li>
+  <li><a href="kefir" target="blank_">Установка и запуск Kefir</a></li>
+  <li><a href="caffeine" target="blank_">Установка и настройка Caffeine и запуск hekate с его помощью</a> - настраиваем точку входа и запускаем кастомную прошивку</li>
   <li><a href="backup-nand" target="blank_">Создание резервной копии прошивки</a></li>
   <li><a href="autorcm#отключение-autorcm" target="blank_">Отключение AutoRCM</a> - <strong>НЕ ПРОПУСТИТЕ ВЫПОЛНЕНИЕ ЭТОГО ПУНКТА!</strong> Хоть и всё используемое программное обеспечение и умеет определять патченная ли используется приставка или нет и отключать AutoRCM для патченных, все же необходимо проверить и убедится, что AutoRCM отключён, иначе вы гарантированно получите брик!</li>
   <li><a href="block-update" target="blank_">Блокировка обновлений в SysNAND</a> - установив блокировку на этом этапе, мы обезопасим себя даже от теоретической возможности случайно обновить нашу 4.1.0 на прошивку выше. К этому моменту у вас <strong>должен быть</strong> бекап вашей прошивки на случай, если что-то пойдёт не так!</li>
-  <li><a href="emunand" target="blank_">Создание EmuNAND</a> - вы можете создать два emuMMC, один для пиратки, другой для лицензии и переключаться между ними, но только на Atmosphere! Таким образом у вас в системе будет три прошивки - 4.1.0, которую нельзя обновлять и которая используется как точка входа, EmuNAND на последней прошивке для пиратки с установленным incognito и привязанным аккаунтом и EmuNAND для лицензии безо всяких модификаций.
+  <li><a href="emunand" target="blank_">Создание EmuNAND</a> - вы можете создать два EmuNAND, один для пиратки, другой для лицензии и переключаться между ними, но только на Atmosphere! Таким образом у вас в системе будет три прошивки - 4.1.0, которую нельзя обновлять и которая используется как точка входа, EmuNAND на последней прошивке для пиратки с установленным incognito и привязанным аккаунтом и EmuNAND для лицензии безо всяких модификаций.
     <ul>
       <li><a href="block-update#восстановление-доступа-к-серверам-nintendo" target="blank_">Восстановление доступа к серверам Nintendo на EmuNAND для лицензии</a> - так как Incognito_RCM умеет работать только с одним EmuNAND, то выполните восстановление доступа сразу после создания первого EmuNAND и используйте его для запуска лицензии. Второй EmuNAND будет для пиратки и не будет иметь доступа к серверам Nintendo. Если вы не собираетесь создавать EmuNAND специально для лицензии и онлайна, просто пропустите этот подпункт.</li>
     </ul>
   </li>
-  <li><a href="cfw" target="blank_">Запуск кастомной прошивки</a> - теперь запускаем кастом. Он автоматически запустится из созданного ранее <span class="tooltip_container">
+  <li><a href="update-to-latest" target="_blank">Обновление EmuNAND до актуальной версии системного ПО</a> - теперь запускаем кастом. Он автоматически запустится из созданного ранее <span class="tooltip_container">
  EmuNAND
  <span class="tooltip"><i class="fas fa-caret-down"></i>
      <span class="bottom">
-         Полная копия NAND, расположенная на карте памяти или в самом же NAND (реже). Применяется для того, чтобы оставить официальную прошивку в максимально нетронутом виде. Чаще всего применяется для того, чтобы запускать в эмунанде кастом. В случае использования программного эксплойта, который требует для запуска кастома строго определённой версии OFW, эмунанд можно служить цели запуска официальной прошивки. Например, на приставке используется аппаратная уязвимость, поэтому пользователь может использовать чистый и не изменённый NAND обновив его до последней прошивки. Это будет назваться SysNAND. Он может использоваться для официальных игр и даже для онлайна. А в эмунанде сделать полную копию сиснанда, но использовать его уже с кастомной прошивкой и без доступа к сервисам Nintendo. 
+         Полная копия NAND, расположенная на карте памяти. Применяется для того, чтобы оставить официальную прошивку в максимально нетронутом виде. Например, на приставке используется аппаратная уязвимость, поэтому пользователь может использовать чистый и не изменённый NAND обновив его до последней прошивки. Это будет назваться SysNAND. Он может использоваться для официальных игр и даже для онлайна. А в эмунанде уже будет находиться полная копию сиснанда, но использоваться уже с кастомной прошивкой и без доступа к сервисам Nintendo для игры в пиратку.
      </span>
  </span>
-</span> для того, чтобы обновить его на актуальную версию системного ПО, при этом оставив <span class="tooltip_container">
+</span>. Нам потребуется обновить его на актуальную версию системного ПО, при этом оставив <span class="tooltip_container">
  SysNAND
  <span class="tooltip"><i class="fas fa-caret-down"></i>
      <span class="bottom">
@@ -376,7 +346,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <li><a href="faq" target="blank_">Часто задаваемые вопросы</a></li>
   <li><a href="troubleshooting">Проблемы и их решения</a></li>
   <li><a href="cheats" target="blank_">Использование читов в EdiZon</a></li>
-  <li><a href="backup-saves" target="blank_">Резервное копирование и восстановление сохранений с помощью Checkpoint</a></li>
+  <li><a href="backup-saves" target="blank_">Резервное копирование и восстановление сохранений </a></li>
   <li><a href="lanplay" target="blank_">Онлайн для прошитых и забаненных</a></li>
   <li><a href="hbl" target="blank_">Запуск Homebrew Launcher</a></li>
   <li><a href="emuiibo" target="blank_">Эмуляция Amiibo с помощью модуля emuiibo</a></li>
@@ -384,6 +354,13 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 </ul>
 
 </div></details>
+
+<p class="text-center"><img src="/images/switch.png" alt="" /></p>
+
+<script>
+	localStorage.setItem('caffeine', 1);
+</script>
+
 
 				
         
@@ -435,18 +412,18 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 	$(document).ready(function() {
     $('input').change(function() {
     $('div.hideble').hide();
-      if ($('input[value="button1').is(':checked')) {
-        $('div.button1').show();
-      }
-      else if ($('input[value="button2').is(':checked')) {
-        $('div.button2').show();
-      }
-      else if ($('input[value="button3').is(':checked')) {
-        $('div.button3').show();
-      }
-      else {
-        $('div.hideble').hide();
-      }
+    if ($('input[value="button1').is(':checked')) {
+      $('div.button1').show();
+    }
+    else if ($('input[value="button2').is(':checked')) {
+      $('div.button2').show();
+    }
+    else if ($('input[value="button3').is(':checked')) {
+      $('div.button3').show();
+    }
+    else {
+      $('div.hideble').hide();
+    }
     });
   });
   

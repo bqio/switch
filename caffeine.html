@@ -128,13 +128,19 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/exploits">Взлом</a></li>
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/get-started">Методы<br>взлома</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/emunand">EmuNAND</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/addons">Полезные<br> инструкции</a></li>
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/faq">FAQ</a></li>
@@ -143,25 +149,10 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
-          
-            
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/games">Установка<br>игр</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/hbl">Запуск<br>HBL</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/exploits">Методы<br>взлома</a></li>
-          
-            
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/update-to-latest">Безопасное<br>обновление</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/site-navigation">Навигация по сайту</a></li>
@@ -310,41 +301,9 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
       
 	  
 	  	
-        
-<aside class="sidebar__right">
-<nav class="toc">
-    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
-<ul class="toc__menu" id="markdown-toc">
-  <li><a href="#работа-с-caffeine" id="markdown-toc-работа-с-caffeine">Работа с Caffeine</a></li>
-</ul>
+        <p>Эксплойт, который используется для взлома методом Caffeine, называется Deja-Vu. Он совместим с любой приставкой любой ревизии, на которой установлена прошивка версии 4.0.0 - 4.1.0, коих не то, чтобы много. Если ваша приставка из таких, то вам крупно повезло :)</p>
 
-  </nav>
-</aside>
-
-<hr />
-
-<div class="notice--warning">Если вы попали в это руководство впервые и не знаете как прошивается Switch, рекомендуем начать знакомство с ним с <a href="/" target="_blank">первой страницы</a></div>
-
-<div class="notice">Если вам помогло или просто понравилось это руководство, то мы принимаем <a href="http://customfw.xyz/donations" target="_blank">пожертвования</a>.<br />По вопросам, касающимся взлома и руководства, обращайтесь <a href="http://customfw.xyz/contacts" target="_blank">сюда</a></div>
-
-<div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удерживанием кнопки (POWER) 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
-
-<hr />
-
-<p>Вы читаете эту страницу вероятнее всего потому, что ваша приставка не совместима с Fusée Gelée. С практической точки зрения это означает, что введя приставку в <span class="tooltip_container">
-	RCM<span class="tooltip"><i class="fas fa-caret-down"></i>
-		<span class="bottom">
-			Режим восстановления на устройствах с процессором Nvidia Tegra, коим является и Switch. Конкретно в свитче вызывается с помощью одновременного нажатия кнопки включения, кнопки увеличения громкости и замыкания с помощью специального замыкателя определённых контактов в планшете. RCM есть во всех Nintendo Switch, но не каждую можно из этого режима прошить.
-		</span>
-	</span>
-</span> вы не сможете загрузить <span class="tooltip_container">
-	hekate
-	<span class="tooltip"><i class="fas fa-caret-down"></i>
-		<span class="bottom">
-			Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
-		</span>
-	</span>
-</span> и взаимодействовать с системой, что означает невозможность её восстановления в случае брика. Для того, чтобы загрузите hekate с помощью цепочки Deja-Vu, вам понадобится точка входа, которая находится внутри запущенной официальной прошивки. То есть, фактически, вам нужна работающая приставка.</p>
+<p>Важно понимать, что у этого метода взлома есть свои ограничения и важные правила, которые нужно соблюдать.</p>
 
 <p>Избегайте использовать любые приложения, которые взаимодействуют с системным разделом напрямую, разве только вы не используете их в процессе выполнения гайда. Опасным считаются так же те приложения, которые позволяют манипулировать режимом <a href="autorcm" target="_blank">AutoRCM</a>. <strong>Если на такой приставке активировать AutoRCM, то фактически вы получите брик.</strong></p>
 
@@ -358,10 +317,8 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 <h3 id="работа-с-caffeine">Работа с Caffeine</h3>
 
-<p>Выполните эту часть, если настраиваете запуск Caffeine в первый раз. Для обычного запуска настроенного Caffeine инструкция под следующим спойлером</p>
-
-<details class="spoiler"><summary class="spoiler-title">Установка и настройка Caffeine</summary><div class="spoiler-body">
-<h3 id="часть-i---установка-caffeine-на-карту-памяти">Часть I - Установка Caffeine на карту памяти</h3>
+<details class="spoiler"><summary class="spoiler-title">Часть I - Установка и настройка Caffeine</summary><div class="spoiler-body">
+<h4 id="i---установка-caffeine-на-карту-памяти">I - Установка Caffeine на карту памяти</h4>
 
 <ol>
   <li>Убедитесь, что ваша карта памяти в формате FAT32. Если это не так - <a href="http://customfw.xyz/format_sd" target="_blank">отформатируйте</a> её</li>
@@ -374,8 +331,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
  </span>
 </span>, если ещё не делали этого.
     <ul>
-      <li>В качестве кастомной прошивки выберите <strong>SX OS</strong> вне зависимости от того, какую прошивку вы планируете использовать в дальнейшем.</li>
-      <li>При установке через скрипт, перейдите в опции и выберете <strong>Caffeine</strong>
+      <li>При установке через скрипт, перейдите в <strong>опции</strong> и выберете <strong>Caffeine</strong>
         <ul>
           <li>Для того, чтобы попасть в опции кефира, внимательно следуйте инструкции на первом экране установщика</li>
         </ul>
@@ -387,14 +343,14 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
       Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
   </span>
  </span>
-</span> распакуйте содержимое папки <a href="files/caffeine.zip" target="_blank">caffeine.zip</a> в корень карты памяти с заменой (<strong>объединить</strong> на macOS)</li>
+</span> распакуйте содержимое папки <a href="files/caffeine.zip" target="_blank">caffeine.zip</a> в корень карты памяти с установленным кефиром с заменой (<strong>объединить</strong> на macOS)</li>
     </ul>
   </li>
   <li>Вставьте карту памяти в приставку</li>
   <li>Запустите приставку</li>
 </ol>
 
-<h3 id="часть-ii---настройка-интернета-для-использования-caffeine">Часть II - Настройка интернета для использования Caffeine</h3>
+<h4 id="ii---настройка-интернета-для-использования-caffeine">II - Настройка интернета для использования Caffeine</h4>
 
 <ol>
   <li>Включите приставку и перейдите в “<strong>Системные настройки</strong>” -&gt; “<strong>Интернет</strong>” -&gt; “<strong>Интернет-настройки</strong>”</li>
@@ -433,28 +389,35 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <li>Откроется окно браузера, в котором будет загружена страница PegaSwitch. Дождитесь её полной загрузки</li>
 </ol>
 
-<h3 id="часть-iii---запуск-кастомной-прошивки">Часть III - Запуск кастомной прошивки</h3>
+<h4 id="iii---запуск-кастомной-прошивки">III - Запуск кастомной прошивки</h4>
 
 <ol>
-  <li>На странице PegaSwitch выберите правую иконку - <strong>hbmenu</strong></li>
-</ol>
-
-<h3 id="часть-iii---установка-fakenews">Часть III - Установка FakeNews</h3>
-
-<ol>
-  <li>На странице PegaSwitch выберите левую иконку - <strong>hbmenu</strong>
+  <li>На странице PegaSwitch выберите правую иконку - <strong>Caffeine</strong>
     <ul>
-      <li>Если эксплойт не срабатывает более минуты, выключите приставку, удерживая кнопку (POWER) 30 секунд, затем снова включите приставку и попробуйте снова зайти в настройки приставки и провести тест подключения, после чего перейти к регистрации и повторите предыдущий пункт</li>
-      <li>Может получиться далеко не с первого раза</li>
+      <li>Спиннер на экране зависнет, однако тот, что в левом нижнем углу, будет вращаться. Наберитесь терпения! В среднем от момента нажатия на иконку,  до срабатывания эксплойта проходит около 45 секунд</li>
+      <li>Если спиннер висит больше минуты, перезагрузите приставку, удерживая кнопку питания 30 секунд, и повторите попытку. Это же нужно сделать, если экран вдруг станет белым.</li>
     </ul>
   </li>
-  <li>Нажмите (HOME)</li>
+  <li>Дождитесь появления текстового поля</li>
+  <li>Нажмите на текстовое поле и сосчитайте до пяти</li>
+  <li>Нажмите кнопку питания</li>
+  <li>Если все сделано правильно, приставка перезагрузится в кастомную прошивку</li>
+</ol>
+
+<h4 id="iv---установка-fakenews">IV - Установка FakeNews</h4>
+
+<ol>
   <li>Перейдите в Альбомы <img src="/images/screenshots/album.png" alt="" /></li>
   <li>Запустите “<strong>Fake News Injector</strong>”</li>
   <li>Подождите пару секунд и нажмите (+) на правом джойконе, чтобы перезагрузить приставку</li>
 </ol>
 
-<h3 id="часть-iv---настройка-fakenews">Часть IV - Настройка FakeNews</h3>
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Часть II - Настройка точки доступа для запуска Caffeine</summary><div class="spoiler-body">
+<p class="notice--info">Эту настройку нужно выполнять каждый раз, когда вы меняете или добавляете точку доступа к себе на консоль. То есть, для запуска эксплойта у активной точки доступа должен быть прописано указанный ниже DNS</p>
+
+<h3 id="настройка-fakenews">Настройка FakeNews</h3>
 
 <ol>
   <li>Включите приставку и перейдите в “<strong>Системные настройки</strong>” -&gt; “<strong>Интернет</strong>” -&gt; “<strong>Интернет-настройки</strong>”</li>
@@ -480,58 +443,23 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <li>Нажмите (HOME)</li>
 </ol>
 
-<h3 id="часть-v---запуск-pegascape">Часть V - Запуск PegaScape</h3>
+<p class="notice--info">Сейчас ваша приставка уже находится в кастомной прошивке. Если вам нужно попасть в <span class="tooltip_container">
+	hekate
+	<span class="tooltip"><i class="fas fa-caret-down"></i>
+		<span class="bottom">
+			Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+		</span>
+	</span>
+</span>, перезагрузите приставку через меню питания и зажмите кнопку понижения громкости на сплешскрине кефира.</p>
 
-<ol>
-  <li>Нажмите на иконку Новости <img src="/images/screenshots/news.png" alt="" /></li>
-  <li>Выберите тайл “<strong>Launch PegaSwitch</strong>”</li>
-  <li>Нажмите на видео с логотипом “<strong>ReSwitched</strong>” для запуска PegaScape</li>
-</ol>
-
-<h3 id="часть-vi---запуск-кастомной-прошивки-с-помощью-caffeine">Часть VI - Запуск кастомной прошивки с помощью Caffeine</h3>
-
-<ol>
-  <li>На странице PegaScape выберите иконку <strong>Caffeine</strong>
-    <ul>
-      <li>Спиннер на экране зависнет, однако тот, что в левом нижнем углу, будет вращаться. Наберитесь терпения! В среднем от момента нажатия на иконку,  до срабатывания эксплойта проходит около 45 секунд</li>
-      <li>Если спиннер висит больше минуты, перезагрузите приставку, удерживая кнопку питания 30 секунд, и повторите попытку. Это же нужно сделать, если экран вдруг станет белым.</li>
-    </ul>
-  </li>
-  <li>Дождитесь появления текстового поля</li>
-  <li>Нажмите на текстовое поле и сосчитайте до пяти</li>
-  <li>Нажмите кнопку питания, удерживая кнопку (VOL-), не отпускайте кнопку громкости, пока не попадёте в <span class="tooltip_container">
- кастомный загрузчик
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
-     </span>
- </span>
-</span></li>
-  <li>Если все сделано правильно, приставка перезагрузится в <span class="tooltip_container">
- hekate
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
-     </span>
- </span>
-</span></li>
-</ol>
+<p class="notice--warning">Если вы выключили приставку, либо у вас села батарея, запускайте кастом по инструкции из спойлера <strong>Запуск настроенного Caffeine</strong></p>
 
 </div></details>
 
 <hr />
 
-<p>Нижеследующую цепочку действий следует выполнять каждый раз, когда вам нужно запустить <span class="tooltip_container">
-	кастом
-	<span class="tooltip"><i class="fas fa-caret-down"></i>
-		<span class="bottom">
-			Модифицированное программное обеспечение консоли, написанное энтузиастами, позволяет делать вещи, недоступные пользователям официальных прошивок, например, запускать неподписанные приложения. В контексте прошивки свитча мы будем называть имеющееся программное обеспечение кастомной прошивкой, хотя, чисто технически, это не так
-		</span>
-	</span>
-</span>, то есть при каждом холодном включении приставки. Если вы запускаете эксплойт с помощью новой точки доступа, не забудьте настроить на ней DNS, выполнив <strong>Части II-IV</strong> под спойлером <strong>Установка и настройка Caffeine</strong> выше</p>
-
 <details class="spoiler"><summary class="spoiler-title">Запуск настроенного Caffeine</summary><div class="spoiler-body">
-<h3 id="часть-i---запуск-pegascape">Часть I - Запуск PegaScape</h3>
+<h4 id="i---запуск-pegascape">I - Запуск PegaScape</h4>
 
 <ol>
   <li>Нажмите на иконку Новости <img src="/images/screenshots/news.png" alt="" /></li>
@@ -539,7 +467,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <li>Нажмите на видео с логотипом “<strong>ReSwitched</strong>” для запуска PegaScape</li>
 </ol>
 
-<h3 id="часть-ii---запуск-hekate-с-помощью-caffeine">Часть II - Запуск hekate с помощью Caffeine</h3>
+<h4 id="ii---запуск-hekate-с-помощью-caffeine">II - Запуск hekate с помощью Caffeine</h4>
 
 <ol>
   <li>На странице PegaScape выберите иконку <strong>Caffeine</strong>
@@ -553,6 +481,21 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <li>Нажмите кнопку питания</li>
   <li>Если все сделано правильно, приставка перезагрузится в кастомную прошивку</li>
 </ol>
+
+<p class="notice--info">Сейчас ваша приставка уже находится в кастомной прошивке. Если вам нужно попасть в <span class="tooltip_container">
+	hekate
+	<span class="tooltip"><i class="fas fa-caret-down"></i>
+		<span class="bottom">
+			Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+		</span>
+	</span>
+</span>, перезагрузите приставку через меню питания и зажмите кнопку понижения громкости на сплешскрине кефира.</p>
+
+<ul>
+  <li>Если вы выключили приставку, либо у вас села батарея, запускайте кастом по этой инструкции</li>
+  <li>Если вы сменили точку доступа, то вам необходимо заново настроить DNS по инструкции <strong>Настройка точки доступа для запуска Caffeine</strong></li>
+</ul>
+
 </div></details>
 
 <hr />
@@ -609,18 +552,18 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 	$(document).ready(function() {
     $('input').change(function() {
     $('div.hideble').hide();
-      if ($('input[value="button1').is(':checked')) {
-        $('div.button1').show();
-      }
-      else if ($('input[value="button2').is(':checked')) {
-        $('div.button2').show();
-      }
-      else if ($('input[value="button3').is(':checked')) {
-        $('div.button3').show();
-      }
-      else {
-        $('div.hideble').hide();
-      }
+    if ($('input[value="button1').is(':checked')) {
+      $('div.button1').show();
+    }
+    else if ($('input[value="button2').is(':checked')) {
+      $('div.button2').show();
+    }
+    else if ($('input[value="button3').is(':checked')) {
+      $('div.button3').show();
+    }
+    else {
+      $('div.hideble').hide();
+    }
     });
   });
   

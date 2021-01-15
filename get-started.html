@@ -13,7 +13,7 @@
 
 
 
-<title>Конвертирование XCI в NSP - Взлом Switch</title>
+<title>Существующие методы взлома - Взлом Switch</title>
 
 
 
@@ -27,11 +27,11 @@
 
 <meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="Взлом Switch">
-<meta property="og:title" content="Конвертирование XCI в NSP">
+<meta property="og:title" content="Существующие методы взлома">
 
 
-  <link rel="canonical" href="https://switch.customfw.xyz/xci-convert.html">
-  <meta property="og:url" content="https://switch.customfw.xyz/xci-convert.html">
+  <link rel="canonical" href="https://switch.customfw.xyz/get-started.html">
+  <meta property="og:url" content="https://switch.customfw.xyz/get-started.html">
 
 
 
@@ -128,13 +128,19 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/exploits">Взлом</a></li>
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/get-started">Методы<br>взлома</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/emunand">EmuNAND</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/addons">Полезные<br> инструкции</a></li>
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/faq">FAQ</a></li>
@@ -143,25 +149,10 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
-          
-            
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/games">Установка<br>игр</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/hbl">Запуск<br>HBL</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/exploits">Методы<br>взлома</a></li>
-          
-            
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/update-to-latest">Безопасное<br>обновление</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/site-navigation">Навигация по сайту</a></li>
@@ -296,14 +287,14 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
  
   
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Конвертирование XCI в NSP">
+    <meta itemprop="headline" content="Существующие методы взлома">
     
     
     
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Конвертирование XCI в NSP
+          <h1 class="page__title" itemprop="headline">Существующие методы взлома
 </h1>
           
         </header>
@@ -314,6 +305,15 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <aside class="sidebar__right">
 <nav class="toc">
     <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#типы-взлома" id="markdown-toc-типы-взлома">Типы взлома</a>    <ul>
+      <li><a href="#fusée-gelée" id="markdown-toc-fusée-gelée">Fusée Gelée</a></li>
+      <li><a href="#caffeine" id="markdown-toc-caffeine">Caffeine</a></li>
+      <li><a href="#чиповка" id="markdown-toc-чиповка">Чиповка</a></li>
+    </ul>
+  </li>
+  <li><a href="#подборка-подходящей-уязвимости" id="markdown-toc-подборка-подходящей-уязвимости">Подборка подходящей уязвимости</a></li>
+</ul>
 
   </nav>
 </aside>
@@ -328,18 +328,48 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 <hr />
 
-<p class="notice--warning">Для установки на приставку игры в формате XCI, ее нужно переконвертировать в NSP.</p>
+<p class="notice--warning">Перед тем, как начать включите <a href="https://customfw.xyz/file-extensions-windows" target="_blank">отображение расширений файлов</a>, если у вас Windows</p>
 
-<ol>
-  <li>Выполните <a href="games#подготовительные-работы" target="_blank">подготовительные работы</a>, если ещё не сделали этого</li>
-  <li>Скачайте и распакуйте <a href="https://github.com/The-4n/4NXCI/releases" target="_blank">4nxci</a> в удобную папку на вашем ПК</li>
-  <li>Положите в папку с программой <a href="/files/keys.txt" target="_blank"><code class="language-plaintext highlighter-rouge">keys.txt</code></a></li>
-  <li>Положите игру в формате <code class="language-plaintext highlighter-rouge">.xci</code> в папку с программой</li>
-  <li>Перетяните игру в формате <code class="language-plaintext highlighter-rouge">.xci</code> на <code class="language-plaintext highlighter-rouge">4nxci.exe</code></li>
-  <li>Дождитесь окончания установки</li>
-</ol>
+<p>В данный момент прошиваются <strong>все</strong> приставки семейства Nintendo Switch. Однако, в зависимости от ревизии приставки, а так же наличия в ней ряда уязвмимостей, методы прошивки могут отличаться. Поэтому первоочередной задачей станет определить какой же именно метод подходит именно вам.</p>
 
-<p>Сконвертированная игра будет называться <code class="language-plaintext highlighter-rouge">%TitleID%.nsp</code></p>
+<h2 id="типы-взлома">Типы взлома</h2>
+
+<h3 id="fusée-gelée"><a href="fusee-gelee" target="_blank">Fusée Gelée</a></h3>
+
+<p>Этим типом взлома можно взломать только приставки, выпускавшиеся до лета 2018го года. Несмотря на то, что после указанного периода приставки выходили точно на такой же аппаратной платформе, уязвимость была закрыта. Если вы не знаете уязвима ли ваша приставка к методу Fusée Gelée, ниже вы найдёте помощник для подборки типа уязвимости по серийному номеру, воспользуйтесь им.</p>
+
+<h3 id="caffeine"><a href="preparation-caffeine" target="_blank">Caffeine</a></h3>
+
+<p>С помощью этого типа взлома, можно взломать любую Nintendo Switch с версией системного ПО 4.0.0 - 4.1.0. Это программная уязвимость, привязанная к определенной версии системного ПО и работающая только на ней.</p>
+
+<h3 id="чиповка"><a href="modchip" target="_blank">Чиповка</a></h3>
+
+<p>С помощью чиповки можно взломать вообще любо Nintendo Switch. Чипы на платформе Mariko (так называемая вторая ревизия) можно взломать только с помощью чиповки. Приставки первой ревизии с закрытой уязвимостью и с прошивкой выше, чем 4.1.0 тоже можно взломать только прочиповав.</p>
+
+<h2 id="подборка-подходящей-уязвимости">Подборка подходящей уязвимости</h2>
+
+<link rel="stylesheet" type="text/css" href="https://check.customfw.xyz/css/main_checker.css" />
+
+<div class="content" id="fullpage">
+  <div class="checker__body inpage">
+    <div class="table__wrapper">
+      <div class="table__container">
+        <div class="table__ns__caption table__caption">Nintendo Switch</div>
+        <div class="table__ns__body table__body" id="ns"><img class="table descriptionToggler" src="https://check.customfw.xyz/img/ns.png" alt="Nintendo Switch" data-result="result1" /></div>
+        <div class="table__nsl__caption table__caption">Nintendo Switch Lite</div>
+        <div class="table__nsl__body table__body" id="nsl"><img class="table descriptionToggler" src="https://check.customfw.xyz/img/nsl.png" alt="Nintendo Switch Lite" data-result="result2" /></div>
+      </div>
+    </div>
+    <div class="result hidden" id="scroll_here"></div>
+    <div class="check-result hidden"></div>
+  </div>
+</div>
+<script src="https://check.customfw.xyz/js/libs.min.js"></script>
+
+<script src="https://check.customfw.xyz/js/main.js"></script>
+
+<script src="https://check.customfw.xyz/js/vercheck.js"></script>
+
 
 				
         
@@ -391,18 +421,18 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 	$(document).ready(function() {
     $('input').change(function() {
     $('div.hideble').hide();
-      if ($('input[value="button1').is(':checked')) {
-        $('div.button1').show();
-      }
-      else if ($('input[value="button2').is(':checked')) {
-        $('div.button2').show();
-      }
-      else if ($('input[value="button3').is(':checked')) {
-        $('div.button3').show();
-      }
-      else {
-        $('div.hideble').hide();
-      }
+    if ($('input[value="button1').is(':checked')) {
+      $('div.button1').show();
+    }
+    else if ($('input[value="button2').is(':checked')) {
+      $('div.button2').show();
+    }
+    else if ($('input[value="button3').is(':checked')) {
+      $('div.button3').show();
+    }
+    else {
+      $('div.hideble').hide();
+    }
     });
   });
   

@@ -13,7 +13,7 @@
 
 
 
-<title>Использование FTP - Взлом Switch</title>
+<title>Установка игр, с помощью tinfoil - Взлом Switch</title>
 
 
 
@@ -27,11 +27,11 @@
 
 <meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="Взлом Switch">
-<meta property="og:title" content="Использование FTP">
+<meta property="og:title" content="Установка игр, с помощью tinfoil">
 
 
-  <link rel="canonical" href="https://switch.customfw.xyz/ftp.html">
-  <meta property="og:url" content="https://switch.customfw.xyz/ftp.html">
+  <link rel="canonical" href="https://switch.customfw.xyz/tinfoil.html">
+  <meta property="og:url" content="https://switch.customfw.xyz/tinfoil.html">
 
 
 
@@ -287,14 +287,14 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
  
   
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Использование FTP">
+    <meta itemprop="headline" content="Установка игр, с помощью tinfoil">
     
     
     
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Использование FTP
+          <h1 class="page__title" itemprop="headline">Установка игр, с помощью tinfoil
 </h1>
           
         </header>
@@ -306,12 +306,9 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <nav class="toc">
     <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
 <ul class="toc__menu" id="markdown-toc">
-  <li><a href="#что-понадобится" id="markdown-toc-что-понадобится">Что понадобится</a></li>
-  <li><a href="#инструкция" id="markdown-toc-инструкция">Инструкция</a>    <ul>
-      <li><a href="#часть-i---установка-программы" id="markdown-toc-часть-i---установка-программы">Часть I - Установка программы</a></li>
-      <li><a href="#часть-ii---подключение-к-ftp-серверу" id="markdown-toc-часть-ii---подключение-к-ftp-серверу">Часть II - подключение к FTP-серверу</a></li>
-    </ul>
-  </li>
+  <li><a href="#подготовительные-работы" id="markdown-toc-подготовительные-работы">Подготовительные работы</a></li>
+  <li><a href="#работа-с-tinfoil" id="markdown-toc-работа-с-tinfoil">Работа с tinfoil</a></li>
+  <li><a href="#возможные-проблемы-и-ошибки" id="markdown-toc-возможные-проблемы-и-ошибки">Возможные проблемы и ошибки</a></li>
 </ul>
 
   </nav>
@@ -327,38 +324,24 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 <hr />
 
-<p>Эта программа нужна для того, чтобы закидывать в приставку файлы не вынимая карты памяти. Скорость закачки в таком случае будет сильно меньше, но не придется перезапускать консоль и, как следствие, <span class="tooltip_container">
-	прошивку
-	<span class="tooltip"><i class="fas fa-caret-down"></i>
-		<span class="bottom">
-			Модифицированное программное обеспечение консоли, написанное энтузиастами, позволяет делать вещи, недоступные пользователям официальных прошивок, например, запускать неподписанные приложения. В контексте прошивки свитча мы будем называть имеющееся программное обеспечение кастомной прошивкой, хотя, чисто технически, это не так
-		</span>
-	</span>
-</span></p>
+<p>С помощью приложения tinfoil игры можно устанавливать напрямую с удалённого сервера в интернете, который постоянно пополняется силами сообщества. По-сути программа является аналогом freeshop для 3DS</p>
 
-<h2 id="что-понадобится">Что понадобится</h2>
+<p>С помощью этой программы не рекомендуется устанавливать игры с ПК. Используйте её исключительно для установки игр через интернет.</p>
 
-<ul>
-  <li>Запущенная <a href="cfw" target="_blank"><span class="tooltip_container">
-  CFW
-  <span class="tooltip"><i class="fas fa-caret-down"></i>
-      <span class="bottom">
-          Модифицированное программное обеспечение консоли, написанное энтузиастами, позволяет делать вещи, недоступные пользователям официальных прошивок, например, запускать неподписанные приложения. В контексте прошивки свитча мы будем называть имеющееся программное обеспечение кастомной прошивкой, хотя, чисто технически, это не так
-      </span>
-  </span>
-</span></a></li>
-  <li>Настроенный и работающий <a href="hbl" target="_blank">Homebrew Launcher</a></li>
-  <li>Свежая версия <a href="https://github.com/mtheall/ftpd/releases/latest" target="_blank">ftpd</a> (<strong>NRO</strong>)</li>
-</ul>
-
-<h2 id="инструкция">Инструкция</h2>
-
-<h3 id="часть-i---установка-программы">Часть I - Установка программы</h3>
+<h2 id="подготовительные-работы">Подготовительные работы</h2>
 
 <ol>
-  <li>Выключите Switch и вставьте его карту памяти в ПК</li>
-  <li>Скопируйте <code class="language-plaintext highlighter-rouge">.nro</code>-файл ftpd в папку <code class="language-plaintext highlighter-rouge">switch</code> в корне карты памяти приставки</li>
-  <li>Вставьте карту памяти в приставку и запустите <a href="cfw" target="_blank"><span class="tooltip_container">
+  <li>Выключите консоль</li>
+  <li>Вставьте карту памяти в ПК</li>
+  <li>Установите <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip"><i class="fas fa-caret-down"></i>
+     <span class="bottom">
+         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+     </span>
+ </span>
+</span>, если ещё не делали этого</li>
+  <li>Вставьте карту памяти в консоль и запустите <a href="cfw" target="_blank"><span class="tooltip_container">
  CFW
  <span class="tooltip"><i class="fas fa-caret-down"></i>
      <span class="bottom">
@@ -366,17 +349,83 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
      </span>
  </span>
 </span></a></li>
+  <li>Запустите DBI через <a href="hbl" target="_blank">HBL</a></li>
+  <li>Установите <code class="language-plaintext highlighter-rouge">Tinfoil [050000BADDAD0000]</code> из папки <code class="language-plaintext highlighter-rouge">games</code></li>
 </ol>
 
-<h3 id="часть-ii---подключение-к-ftp-серверу">Часть II - подключение к FTP-серверу</h3>
+<h2 id="работа-с-tinfoil">Работа с tinfoil</h2>
 
-<p>Ваш IP-адрес будет показан на экране консоли в верхней строке</p>
+<ol>
+  <li>Запустите <strong>tinfoil</strong> из главного меню приставки</li>
+  <li>Дождитесь пока загрузится список игр, доступных для установки</li>
+  <li>В появившихся окнах нажимайте <strong>OK</strong>
+    <ul>
+      <li>Могут так же появляться ошибки, игнорируйте их</li>
+    </ul>
+  </li>
+  <li>Перейдите в нужный раздел, выберите игру и нажмите (A)
+    <ul>
+      <li>В разделе <strong>Новые игры</strong> находятся все игры, которые есть на сервере
+        <ul>
+          <li>Для поиска нажмите (+) на джойконе, находясь на строке <strong>Новые игры</strong> в левой части меню</li>
+        </ul>
+      </li>
+      <li>В разделе <strong>Новые обновления</strong> находятся обновления для установленных у вас игр</li>
+      <li>В разделе <strong>Новые DLC</strong> находятся DLC для установленных у вас игр</li>
+    </ul>
+  </li>
+  <li>В появившемся меню выберите “<strong>Устанавливать все DLC</strong>” и “<strong>Устанавливать все обновления</strong>”, чтобы вместе с игрой установилось последнее обновление и все имеющиеся DLC</li>
+  <li>Нажмите “<strong>Install</strong>”, чтобы начать установку</li>
+  <li>Нажмите (B), чтобы свернуть появившееся окно</li>
+  <li>Прогресс и скорость закачки будет отображаться в панели “<strong>Download</strong>”, которая появится вверху экрана</li>
+  <li>Вы можете добавлять игры в список закачки способом, описанным выше. Весь список можно посмотреть во вкладке “<strong>Очередь</strong>”, которая находится на панели вкладок слева</li>
+  <li>После того, как выбранная игра скачается, выйдите из программы кнопкой (HOME)</li>
+</ol>
 
-<p>Подключитесь к серверу с адресом <code class="language-plaintext highlighter-rouge">указанный-ip:5000</code> любым удобным для вас способом.</p>
+<p class="notice--warning">Не включайте опцию “<strong>Стандартное шифрование</strong>”! Установленные таким образом игры не будут работать!</p>
 
-<hr />
+<p class="notice--warning">После установки обновлений с помощью tinfoil, рекомендуется зайти в DBI и выбрать “<strong>Cleanup Orphaned Files</strong>”! Этот пункт поможет удалить мусорные файлы, которые tinfoil оставил при установке обновлений.</p>
 
-<p class="notice--success"><a href="javascript:window.close();">Закрыть страницу</a></p>
+<h2 id="возможные-проблемы-и-ошибки">Возможные проблемы и ошибки</h2>
+
+<details class="spoiler"><summary class="spoiler-title">В Tinfoil пропали все игры</summary><div class="spoiler-body">
+<p><strong>О:</strong></p>
+<ul>
+  <li>Не меняйте в tinfoil тему! Тема в программе должна начинаться с префикса <code class="language-plaintext highlighter-rouge">hbg_</code></li>
+  <li>Убедитесь, что на приставке стоит верная дата и время. Можете синхронизировать её через приложение <strong>NX-ntpc</strong> в HBL</li>
+  <li>Удалите tinfoil, обновите <span class="tooltip_container">
+  <a href="kefir" target="_blank">kefir</a>
+  <span class="tooltip"><i class="fas fa-caret-down"></i>
+      <span class="bottom">
+          Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+      </span>
+  </span>
+</span>, установите tinfoil из папки games на карте памяти</li>
+</ul>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Я случайно удалил тикеты игры в tinfoil</summary><div class="spoiler-body">
+<p><strong>О:</strong> Возможно, вы удалили тикеты всех игр. Для переустановки тикетов, запустите <a href="games" target="_blank">tinfoil</a>, перейдите на вкладку “<strong>Тикеты</strong>”, и для каждой игры проделайте следующее:</p>
+<ol>
+  <li>На игре нажмите (Y)</li>
+  <li>Нажмите (R)</li>
+  <li>Включите опцию “<strong>Установить Ticket</strong>”</li>
+  <li>Нажмите “<strong>Начать установку</strong>”</li>
+</ol>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">SSL connection failed</summary><div class="spoiler-body">
+<p>Вам нужно выставить корректное время и дату на вашей приставке. Лучше всего будет воспользоваться приложением nx-ntpc. Убедитесь, что на приставке включен интернет, запустите программу и нажмите (А). Если в приставке отключена синхронизация времени в настройке, потребуется перезагрузка программы. После перезагрузки, запустите программу ещё раз. Если после синхронизации время на приставке не совпадает с вашим локальным, убедитесь, что в настройках консоли указан верный часовой пояс.</p>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Красный экран, говорящий о том, что установлен KOSMOS</summary><div class="spoiler-body">
+<p>Переустановите кефир через скрипт</p>
+
+</div></details>
+
 
 				
         

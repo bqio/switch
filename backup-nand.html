@@ -128,13 +128,19 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/exploits">Взлом</a></li>
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/get-started">Методы<br>взлома</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/emunand">EmuNAND</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/addons">Полезные<br> инструкции</a></li>
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/faq">FAQ</a></li>
@@ -143,25 +149,10 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
-          
-            
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/games">Установка<br>игр</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/hbl">Запуск<br>HBL</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/exploits">Методы<br>взлома</a></li>
-          
-            
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/update-to-latest">Безопасное<br>обновление</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/site-navigation">Навигация по сайту</a></li>
@@ -316,10 +307,9 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
     <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#что-понадобится" id="markdown-toc-что-понадобится">Что понадобится</a></li>
-  <li><a href="#резервное-копирование" id="markdown-toc-резервное-копирование">Резервное копирование</a>    <ul>
-      <li><a href="#часть-i---дампим-nand" id="markdown-toc-часть-i---дампим-nand">Часть I - Дампим NAND</a></li>
-      <li><a href="#часть-ii---дампим-boot01" id="markdown-toc-часть-ii---дампим-boot01">Часть II - Дампим BOOT0/1</a></li>
-      <li><a href="#часть-iii---дампим-ключи" id="markdown-toc-часть-iii---дампим-ключи">Часть III - Дампим ключи</a></li>
+  <li><a href="#создание-резервное-копии" id="markdown-toc-создание-резервное-копии">Создание резервное копии</a>    <ul>
+      <li><a href="#часть-i---резервное-копирование-nand" id="markdown-toc-часть-i---резервное-копирование-nand">Часть I - Резервное копирование NAND</a></li>
+      <li><a href="#часть-ii---дампим-ключи" id="markdown-toc-часть-ii---дампим-ключи">Часть II - Дампим ключи</a></li>
       <li><a href="#часть-iv---перемещение-резервной-копии-на-пк" id="markdown-toc-часть-iv---перемещение-резервной-копии-на-пк">Часть IV - Перемещение резервной копии на ПК</a></li>
     </ul>
   </li>
@@ -361,7 +351,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <h2 id="что-понадобится">Что понадобится</h2>
 
 <ul>
-  <li>Установленный свежий <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.7z</code>-архива <span class="tooltip_container">
+  <li>Установленный свежий <span class="tooltip_container">
   <a href="kefir" target="_blank">kefir</a>
   <span class="tooltip"><i class="fas fa-caret-down"></i>
       <span class="bottom">
@@ -372,16 +362,18 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <li>Работающая microSD, с не менее чем 32 Гб свободного места, в формате exFAT (не обязательно при резервном копировании на ПК)
     <ul>
       <li>Не важно поддерживает ли уже ваш Switch exFAT или нет в самой прошивке, всё равно в гекате используйте карту в exFAT</li>
+      <li>Да, потом, в ходе руководства, придется отформатировать её в FAT32. Либо используйте разные карты для бекапа и приставки</li>
     </ul>
   </li>
 </ul>
 
-<h2 id="резервное-копирование">Резервное копирование</h2>
+<h2 id="создание-резервное-копии">Создание резервное копии</h2>
 
-<h3 id="часть-i---дампим-nand">Часть I - Дампим NAND</h3>
+<h3 id="часть-i---резервное-копирование-nand">Часть I - Резервное копирование NAND</h3>
 
-<details class="spoiler"><summary class="spoiler-title">Способ I - на приставке через hekate</summary><div class="spoiler-body">
-<p class="notice--info">Этот способ требует карты памяти с не менее чем 32-мя Гб свободного места. Если у вас нет таковой, но есть карта меньшего размера, бекап будет делаться по частям. После заполнения текущего объёма на карте на экране будет выведена информация о том, что вам необходимо перенести папку backup на ПК, затем вернуть карту в консоль и продолжить создание резервной копии. После того, как все части бекапа будут находиться в одной папке на компьютере, их нужно склеить, используя скрипт <a href="https://github.com/CTCaer/hekate/releases/download/v4.2/joiner_scripts_for_windows_linux_macos.zip" target="_blank">joiner_scripts_for_windows_linux_macos.zip</a>. Этот способ рассматриваться подробно не будет. Он занимает <strong>намного</strong> больше времени.</p>
+<details class="spoiler"><summary class="spoiler-title">Способ I - С помощью hekate</summary><div class="spoiler-body">
+<details class="spoiler"><summary class="spoiler-title">Часть I - делаем дамп внутренней памяти приставки (NAND)</summary><div class="spoiler-body">
+<p class="notice--info">Этот способ требует карты памяти с не менее чем 32-мя Гб свободного места. Если у вас нет таковой, но есть карта меньшего размера, бекап будет делаться по частям. После заполнения текущего объёма на карте на экране будет выведена информация о том, что вам необходимо перенести папку backup на ПК, затем вернуть карту в консоль и продолжить создание резервной копии. После того, как все части бекапа будут находиться в одной папке на компьютере, их нужно склеить, используя скрипт <a href="https://github.com/CTCaer/hekate/releases/download/v4.2/joiner_scripts_for_windows_linux_macos.zip" target="_blank">joiner_scripts_for_windows_linux_macos.zip</a>. Этот способ рассматриваться подробно не будет. Он занимает <strong>намного</strong> больше времени. <strong>Крайне рекомендуется использовать карту достаточного объема в формате exFAT, поскольку только так вы будете уверены в том, что ваш бекап полный и правильный!</strong></p>
 
 <ol>
   <li>Обновите <span class="tooltip_container">
@@ -396,7 +388,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
  hekate
  <span class="tooltip"><i class="fas fa-caret-down"></i>
      <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
+         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
      </span>
  </span>
 </span> с помощью поддерживаемого на вашей приставке эксплойта, запуститив пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.7z</code>-архива <span class="tooltip_container">
@@ -406,7 +398,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
          Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
      </span>
  </span>
-</span> с помощью <a href="fusee-gelee" target="_blank">Fusée Gelée</a> или воспользовавшись <a href="caffeine" target="_blank">Caffeine</a>.
+</span>
     <ol>
       <li>Удерживайте (VOL-) на приставке во время появления логотипа kefir, чтобы попасть в hekate
         <ul>
@@ -429,7 +421,42 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 </div></details>
 
-<details class="spoiler"><summary class="spoiler-title">Способ II - используя ПК</summary><div class="spoiler-body">
+<details class="spoiler"><summary class="spoiler-title">Часть II - делаем дамп загрузочных разделов (BOOT0/BOOT1)</summary><div class="spoiler-body">
+<ol>
+  <li>Войдите в <span class="tooltip_container">
+ hekate
+ <span class="tooltip"><i class="fas fa-caret-down"></i>
+     <span class="bottom">
+         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+     </span>
+ </span>
+</span> с помощью поддерживаемого на вашей приставке эксплойта, запуститив пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.7z</code>-архива <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip"><i class="fas fa-caret-down"></i>
+     <span class="bottom">
+         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+     </span>
+ </span>
+</span>
+    <ol>
+      <li>Удерживайте (VOL-) на приставке во время появления логотипа kefir, чтобы попасть в hekate
+        <ul>
+          <li>Пропустите этот шаг, если вы уже в hekate</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>Перейдите в меню “<strong>Tools</strong>” -&gt; “<strong>Backup eMMC</strong>”</li>
+  <li>Выберите “<strong>eMMC BOOT0 &amp; BOOT1</strong>”</li>
+  <li>Нажмите кнопку “<strong>Close</strong>”, чтобы вернуться в предыдущее меню</li>
+</ol>
+</div></details>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Способ II - С помощью ПК</summary><div class="spoiler-body">
+<h3 id="дамп-nand">Дамп NAND</h3>
+
 <p class="notice--info">Этот способ сложнее, чем предыдущий, но не требует наличия большой карты памяти. Скорость создания резервной копии таким способом будет не более 6МБ/с</p>
 
 <ol>
@@ -526,73 +553,18 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <li>Если всё прошло успешно, то дамп NAND появится в директории, которую вы указали. Сохраните его в надёжном месте!</li>
 </ol>
 
-<p class="notice--success">Следующий шаг: <a href="#часть-iii---дампим-ключи">Дампим ключи</a></p>
 </div></details>
 
-</div></details>
+<h3 id="дамп-boot0boot1">Дамп BOOT0/BOOT1</h3>
 
-<h3 id="часть-ii---дампим-boot01">Часть II - Дампим BOOT0/1</h3>
-<details class="spoiler"><summary class="spoiler-title">Способ I - на приставке через hekate</summary><div class="spoiler-body">
-<ol>
-  <li>Войдите в <span class="tooltip_container">
- hekate
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
-     </span>
- </span>
-</span> с помощью поддерживаемого на вашей приставке эксплойта, запуститив пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.7z</code>-архива <span class="tooltip_container">
- <a href="kefir" target="_blank">kefir</a>
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-     </span>
- </span>
-</span> с помощью <a href="fusee-gelee" target="_blank">Fusée Gelée</a> или воспользовавшись <a href="caffeine" target="_blank">Caffeine</a>.
-    <ol>
-      <li>Удерживайте (VOL-) на приставке во время появления логотипа kefir, чтобы попасть в hekate
-        <ul>
-          <li>Пропустите этот шаг, если вы уже в hekate</li>
-        </ul>
-      </li>
-    </ol>
-  </li>
-  <li>Перейдите в меню “<strong>Tools</strong>” -&gt; “<strong>Backup eMMC</strong>”</li>
-  <li>Выберите “<strong>eMMC BOOT0 &amp; BOOT1</strong>”</li>
-  <li>Нажмите кнопку “<strong>Close</strong>”, чтобы вернуться в предыдущее меню</li>
-</ol>
-</div></details>
-
-<details class="spoiler"><summary class="spoiler-title">Способ II - используя ПК</summary><div class="spoiler-body">
 <p>Делайте аналогичным способом, как делали <strong>Дамп NAND</strong>, но вместо “ums_<strong>eMMC</strong>.ini” выбирайте “ums_<strong>boot0</strong>.ini” для дампа BOOT0 и “ums_<strong>boot1</strong>.ini” для дампа BOOT1</p>
+
 </div></details>
 
-<h3 id="часть-iii---дампим-ключи">Часть III - Дампим ключи</h3>
+<h3 id="часть-ii---дампим-ключи">Часть II - Дампим ключи</h3>
 
+<details class="spoiler"><summary class="spoiler-title">На приставке, прошитой через Fusée Gelée</summary><div class="spoiler-body">
 <ol>
-  <li>Войдите в <span class="tooltip_container">
- hekate
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
-     </span>
- </span>
-</span> с помощью поддерживаемого на вашей приставке эксплойта, запуститив пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.7z</code>-архива <span class="tooltip_container">
- <a href="kefir" target="_blank">kefir</a>
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-     </span>
- </span>
-</span> с помощью <a href="fusee-gelee" target="_blank">Fusée Gelée</a> или воспользовавшись <a href="caffeine" target="_blank">Caffeine</a>.
-    <ol>
-      <li>Удерживайте (VOL-) на приставке во время появления логотипа kefir, чтобы попасть в hekate
-        <ul>
-          <li>Пропустите этот шаг, если вы уже в hekate</li>
-        </ul>
-      </li>
-    </ol>
-  </li>
   <li>Установите <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip"><i class="fas fa-caret-down"></i>
@@ -605,25 +577,37 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
       <li>Если уже делали, не нужно делать повторно</li>
     </ul>
   </li>
-  <li>Перейдите в меню “<strong>Payloads</strong>”
-    <ul>
-      <li>Если на карте не установлен <span class="tooltip_container">
+  <li>Войдите в <span class="tooltip_container">
+ hekate
+ <span class="tooltip"><i class="fas fa-caret-down"></i>
+     <span class="bottom">
+         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+     </span>
+ </span>
+</span> с помощью поддерживаемого на вашей приставке эксплойта, запуститив пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.7z</code>-архива <span class="tooltip_container">
  <a href="kefir" target="_blank">kefir</a>
  <span class="tooltip"><i class="fas fa-caret-down"></i>
-  <span class="bottom">
-      Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-  </span>
+     <span class="bottom">
+         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+     </span>
  </span>
-</span>, то hekate загрузится без графического интерфейса. В таком случае <code class="language-plaintext highlighter-rouge">payloads</code> будет находиться в меню <code class="language-plaintext highlighter-rouge">Launch</code>, а навигация по hekate будет происходить с помощью кнопок громкости и кнопки включения</li>
-    </ul>
+</span>
+    <ol>
+      <li>Удерживайте (VOL-) на приставке во время появления логотипа kefir, чтобы попасть в hekate
+        <ul>
+          <li>Пропустите этот шаг, если вы уже в hekate</li>
+        </ul>
+      </li>
+    </ol>
   </li>
+  <li>Перейдите в меню “<strong>Payloads</strong>”</li>
   <li>Выберите “<strong>Lockpick_RCM.bin</strong>”</li>
   <li>Выберите “<strong>Dump keys from SysNAND</strong>”
     <ul>
       <li>Навигация по меню осуществляется кнопками громкости, а выбор кнопкой (POWER)</li>
       <li>Дампинг начнётся незамедлительно
         <ul>
-          <li>Если ваша прошивка 8.0.0 или выше, то после нажатия кнопки (POWER) приставка перезапустит программу из среды Sept. После появления логотипа Sept нажмите (POWER) ещё раз.</li>
+          <li>Если ваша прошивка 8.0.0 или выше, то после нажатия кнопки (POWER) приставка перезапустит программу из среды Sept. После перезапуска программы, нажмите (POWER) ещё раз.</li>
         </ul>
       </li>
     </ul>
@@ -632,11 +616,73 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <li>Выберите “<strong>Power off</strong>”, чтобы выключить приставку</li>
 </ol>
 
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">На приставке, прошитой через SX Core / SX Lite</summary><div class="spoiler-body">
+<p class="notice--info">Для дампа ключей на приставках, прошитых через SX Core / SX Lite с установленной в чип прошивкой от SX, нужно запускать hekate через Cleanup. Если же на вашем чипе стоит Spacecraft-NX, дамп ключей будет такой же как для пользователей Fusée Gelée. Узнать какая именно у вас прошивка на чипе очень просто. Выключите приставку и запустите её без карты памяти. Если вы увидите красную иконку карты памяти на весь экран, у вас прошивка от SX, если самолётик на белом фоне - Spacecraft. Выключите приставку, удерживая кнопку питания, пока не потухнет экран и верните карту памяти на место.</p>
+
+<ol>
+  <li>Выключите приставку, удерживая 30 секунд кнопку питания</li>
+  <li>Вставьте карту памяти приставки в ПК</li>
+  <li>Переименуйте находящийся там файл <code class="language-plaintext highlighter-rouge">boot.dat</code> в <code class="language-plaintext highlighter-rouge">_boot.dat</code></li>
+  <li>Скачайте <a href="https://drive.google.com/file/d/1PZ7w1J5PAQf4CrUWfzfA1mVnCNeD13RP" target="_blank">SX_OS 3.1.0</a></li>
+  <li>Поместите скачанный <code class="language-plaintext highlighter-rouge">boot.dat</code> в корень карты памяти с заменой</li>
+  <li>Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS</li>
+  <li>Перейдите в “<strong>Options</strong>” -&gt; “<strong>SX Core</strong> / <strong>SX Lite</strong>”, затем выберите “<strong>Cleanup</strong>” -&gt; “<strong>Continue</strong>”</li>
+  <li>Перейдите в “<strong>Payloads</strong>” -&gt; <code class="language-plaintext highlighter-rouge">payload.bin</code>”`, затем выберите “<strong>Launch</strong>”. Должен загрузиться SysNAND.</li>
+  <li>Войдите в <span class="tooltip_container">
+ hekate
+ <span class="tooltip"><i class="fas fa-caret-down"></i>
+     <span class="bottom">
+         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+     </span>
+ </span>
+</span> с помощью поддерживаемого на вашей приставке эксплойта, запуститив пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.7z</code>-архива <span class="tooltip_container">
+ <a href="kefir" target="_blank">kefir</a>
+ <span class="tooltip"><i class="fas fa-caret-down"></i>
+     <span class="bottom">
+         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+     </span>
+ </span>
+</span>
+    <ol>
+      <li>Удерживайте (VOL-) на приставке во время появления логотипа kefir, чтобы попасть в hekate
+        <ul>
+          <li>Пропустите этот шаг, если вы уже в hekate</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>Перейдите в меню “<strong>Payloads</strong>”</li>
+  <li>Выберите “<strong>Lockpick_RCM.bin</strong>”</li>
+  <li>Выберите “<strong>Dump keys from SysNAND</strong>”
+    <ul>
+      <li>Навигация по меню осуществляется кнопками громкости, а выбор кнопкой (POWER)</li>
+      <li>Дампинг начнётся незамедлительно
+        <ul>
+          <li>Если ваша прошивка 8.0.0 или выше, то после нажатия кнопки (POWER) приставка перезапустит программу из среды Sept. После перезапуска программы, нажмите (POWER) ещё раз.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Нажмите (POWER), чтобы вернуться в главное меню программы</li>
+  <li>Выберите “<strong>Power off</strong>”, чтобы выключить приставку</li>
+  <li>Вставьте карту памяти приставки в ПК</li>
+  <li>Удалите находящийся там файл <code class="language-plaintext highlighter-rouge">boot.dat</code></li>
+  <li>Переименуйте находящийся там файл <code class="language-plaintext highlighter-rouge">_boot.dat</code> в <code class="language-plaintext highlighter-rouge">boot.dat</code></li>
+</ol>
+
+</div></details>
+
 <h3 id="часть-iv---перемещение-резервной-копии-на-пк">Часть IV - Перемещение резервной копии на ПК</h3>
 
 <ol>
   <li>Вставьте карту памяти консоли в ПК</li>
-  <li>Переместите файл <code class="language-plaintext highlighter-rouge">sd:/switch/prod.keys</code> в папку <code class="language-plaintext highlighter-rouge">backup</code></li>
+  <li>Перейдите в папку <code class="language-plaintext highlighter-rouge">sd:/switch</code> и скопируйте файлы <code class="language-plaintext highlighter-rouge">prod.keys</code> и <code class="language-plaintext highlighter-rouge">partialaes.keys</code> в ту же папку, в которую вы скопировали ваш бекап
+    <ul>
+      <li>Файла <code class="language-plaintext highlighter-rouge">partialaes.keys</code> может не быть. Это нормально</li>
+    </ul>
+  </li>
   <li>Переместите на ПК папку <code class="language-plaintext highlighter-rouge">backup</code></li>
   <li>Заархивируйте папку <code class="language-plaintext highlighter-rouge">backup</code> и поместите в надёжное место</li>
   <li>Удалите папку <code class="language-plaintext highlighter-rouge">backup</code> с карты памяти, если вы скопировали её, а не переместили</li>
@@ -667,7 +713,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
  hekate
  <span class="tooltip"><i class="fas fa-caret-down"></i>
      <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
+         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
      </span>
  </span>
 </span> с помощью поддерживаемого на вашей приставке эксплойта, запуститив пейлоад <code class="language-plaintext highlighter-rouge">payload.bin</code> из <code class="language-plaintext highlighter-rouge">.7z</code>-архива <span class="tooltip_container">
@@ -677,7 +723,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
          Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
      </span>
  </span>
-</span> с помощью <a href="fusee-gelee" target="_blank">Fusée Gelée</a> или воспользовавшись <a href="caffeine" target="_blank">Caffeine</a>.
+</span>
     <ol>
       <li>Удерживайте (VOL-) на приставке во время появления логотипа kefir, чтобы попасть в hekate
         <ul>
@@ -753,18 +799,18 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 	$(document).ready(function() {
     $('input').change(function() {
     $('div.hideble').hide();
-      if ($('input[value="button1').is(':checked')) {
-        $('div.button1').show();
-      }
-      else if ($('input[value="button2').is(':checked')) {
-        $('div.button2').show();
-      }
-      else if ($('input[value="button3').is(':checked')) {
-        $('div.button3').show();
-      }
-      else {
-        $('div.hideble').hide();
-      }
+    if ($('input[value="button1').is(':checked')) {
+      $('div.button1').show();
+    }
+    else if ($('input[value="button2').is(':checked')) {
+      $('div.button2').show();
+    }
+    else if ($('input[value="button3').is(':checked')) {
+      $('div.button3').show();
+    }
+    else {
+      $('div.hideble').hide();
+    }
     });
   });
   

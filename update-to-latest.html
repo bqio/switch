@@ -128,13 +128,19 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             <li class="masthead__menu-item"><a href="https://nincfw.olx.ua/"><i>Купить<br>прошитую</i></a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/exploits">Взлом</a></li>
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/get-started">Методы<br>взлома</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/emunand">EmuNAND</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/addons">Полезные<br> инструкции</a></li>
+            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/faq">FAQ</a></li>
@@ -143,25 +149,10 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/troubleshooting">Проблемы и<br>их решение</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/usage">Использование<br>прошитой Switch</a></li>
-          
-            
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/games">Установка<br>игр</a></li>
           
             
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/kefir">Kefir</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/hbl">Запуск<br>HBL</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/exploits">Методы<br>взлома</a></li>
-          
-            
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/update-to-latest">Безопасное<br>обновление</a></li>
-          
-            
-            <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/backup-nand">Резервное<br>копирование</a></li>
           
             
             <li class="masthead__menu-item"><a href="https://switch.customfw.xyz/site-navigation">Навигация по сайту</a></li>
@@ -340,8 +331,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 <hr />
 
-<p class="notice--warning">На данной странице представлена инструкция для <strong>Atmosphere</strong>. Инструкция для пользователей SXOS находится <a href="https://sx.customfw.xyz/update-to-latest" target="_blank">здесь</a></p>
-
 <div id="selector">
 <h2 id="выберите-эксплойт-который-используете-для-активации-взлома">Выберите эксплойт, который используете для активации взлома</h2>
 
@@ -361,6 +350,8 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 	<div class="select_fw">
 	    <input type="radio" id="button1" name="exploit" value="button1" checked="" />
 	    <label for="button1">Fusée Gelée</label>
+	    <input type="radio" id="button0" name="exploit" value="button0" />
+	    <label for="button0">SX Core / SX Lite</label>
 	    <input type="radio" id="button2" name="exploit" value="button2" />
 	    <label for="button2">Caffeine</label>
 	</div>
@@ -415,7 +406,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 			Формат карт памяти расширенного объёма. Поддерживается Nintendo Switch только после обновления, установленного специальным образом. По умолчанию, даже свежая прошивка не содержит этого обновления, поэтому как только в приставку будет вставлена карта памяти в формате exFAT, приставка потребует обновить прошивку.
 		</span>
 	</span>
-</span> и для поднятия прошивки идентичный! Да,нужно делать, даже если у вас уже и так 11.0.1</p>
+</span> и для поднятия прошивки идентичный! Да, нужно делать, даже если у вас уже и так 11.0.1</p>
 
 <p>При прошивке на некоторые версии (1.0.0, 2.0.0, 5.0.0, 6.0.0, 6.2.0, 7.0.0) приставка сжигает специальные предохранители на чипе, чтобы по их состоянию отслеживать версию системного ПО на вашей приставке. В обычном режиме при установке прошивки, консоль проверяет количество сожжённых предохранителей. Если это количество больше, чем требуется для прошивки, то консоль понимает, что вы пытаетесь установить прошивку ниже, чем была установлена до этого, и не позволит это сделать. Если же количество сожжённых предохранителей ниже, чем требует устанавливаемая прошивка, то прошивка разрешается и в ходе неё сжигается столько предохранителей сколько необходимо, чтобы соответствовать указанному в прошивке количеству. Таким образом, если вы обновились до 11.0.1 официально, у вас на приставке будет сожжено 12 предохранителей. Если вы попытаетесь восстановить бекап, скажем, сделанный на прошивке 8.1.0, для работы которой требуется 10 предохранителей (а у вас сожжено 12), то приставка поймёт это и официальная прошивка не запустится!</p>
 
@@ -428,14 +419,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <h2 id="что-понадобится">Что понадобится</h2>
 
 <ul>
-  <li>Умение <a href="fusee-gelee" target="_blank">запускать пейлоады через Fusée Gelée</a> и <a href="cfw" target="_blank"><span class="tooltip_container">
-  кастомную прошивку
-  <span class="tooltip"><i class="fas fa-caret-down"></i>
-      <span class="bottom">
-          Модифицированное программное обеспечение консоли, написанное энтузиастами, позволяет делать вещи, недоступные пользователям официальных прошивок, например, запускать неподписанные приложения. В контексте прошивки свитча мы будем называть имеющееся программное обеспечение кастомной прошивкой, хотя, чисто технически, это не так
-      </span>
-  </span>
-</span></a></li>
   <li>Свежая версия <span class="tooltip_container">
   <a href="kefir" target="_blank">kefir</a>
   <span class="tooltip"><i class="fas fa-caret-down"></i>
@@ -468,7 +451,14 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 </ol>
 
 <h3 id="часть-ii---подготовка-к-обновлению">Часть II - Подготовка к обновлению</h3>
-<p class="notice--warning">Важная информация!! Здесь нужно дать разъяснения по поводу работы файловой системы в Switch. Единственная ФС, которая изначально поддерживается - это <a href="http://customfw.xyz/format_sd" target="_blank">FAT32</a>. Для поддержки exFAT на приставку нужно ставить драйвера. Запрос на установку драйверов будет только в том случае, если приставка увидит, что в консоль вставлена карта в формате exFAT, но это на официальной прошивке. Кастомная же просто не загрузится. После логотипа Nintendo Switch при загрузке Atmosphere вы просто упрётесь в чёрный экран с ошибкой. С помощью безопасного обновления прошивки мы можем установить эти драйвера принудительно, но только в том случае, если для обновления мы будем использовать карту памяти в <a href="http://customfw.xyz/format_sd" target="_blank">FAT32</a> или у нас уже установлены нужные драйвера. Если вы впервые взламываете консоль то у вас, вероятнее всего, не установлены нужные драйвера. Можете просто использовать любую другую карту в <a href="http://customfw.xyz/format_sd" target="_blank">FAT32</a>, 4ГБ хватит с головой для обновления. После обновления, карты exFAT будут работать. При установке прошивки через daybreak из состава кефира, доайвера exFAT будут устанавливаться автоматически.</p>
+<p class="notice--warning">Важная информация!! Здесь нужно дать разъяснения по поводу работы файловой системы в Switch. Единственная ФС, которая изначально поддерживается - это <a href="http://customfw.xyz/format_sd" target="_blank">FAT32</a>. Для поддержки exFAT на приставку нужно ставить драйвера. Запрос на установку драйверов будет только в том случае, если приставка увидит, что в консоль вставлена карта в формате exFAT, но это на официальной прошивке. Кастомная же просто не загрузится. После логотипа Nintendo Switch при загрузке Atmosphere вы просто упрётесь в чёрный экран с ошибкой. С помощью безопасного обновления прошивки мы можем установить эти драйвера принудительно, но только в том случае, если для обновления мы будем использовать карту памяти в <a href="http://customfw.xyz/format_sd" target="_blank">FAT32</a> или у нас уже установлены нужные драйвера. Если вы впервые взламываете консоль то у вас, вероятнее всего, не установлены нужные драйвера. Можете просто использовать любую другую карту в <a href="http://customfw.xyz/format_sd" target="_blank">FAT32</a>, 4ГБ хватит с головой для обновления. После обновления, карты exFAT будут работать. При установке прошивки через daybreak из состава кефира, доайвера exFAT будут устанавливаться автоматически. Обратите внимание, что драйвера необходимы только для работы карты внутри HOS, операционной системы приставки. Для работы карт формата exFAT в <span class="tooltip_container">
+	hekate
+	<span class="tooltip"><i class="fas fa-caret-down"></i>
+		<span class="bottom">
+			Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
+		</span>
+	</span>
+</span>, или других пейлоадах, драйвера exFAT не нужны.</p>
 
 <ol>
   <li>Выключите Switch и вставьте его карту памяти в ПК
@@ -525,14 +515,11 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 <div class="notice--warning">
 <p><strong>Обязательно убедитесь, что находитесь в EmuNAND</strong>, если поднимаете версию вашего системного ПО. Для этого перейдите в <strong>Системные настройки</strong> -&gt; <strong>Система</strong>. В строке ниже <strong>Обновления системы</strong> будет написана версия вашего системного ПО, версия Atmosphere и буква <strong>S</strong> или <strong>E</strong>, где <strong>S</strong> будет означать <em>SysNAND</em>, а <strong>E</strong> - <em>EmuNAND</em>.</p>
-<ul>
-  <li>На SX OS вы не сможете проверить этим способом запущен ли EmuNAND, поскольку в SX OS там будет написана только версия системного ПО. Просто запустите <strong>Альбомы</strong>, чтобы попасть в меню SXOS. Если вы находитесь в EmuNAND, то в верхнем правом углу, под номером версии системы будет соответствующая пометка.</li>
-</ul>
 
-<p class="text-center notice--info"><img src="/images/screenshots/sx_emu.png" alt="" /></p>
+<p class="text-center notice--info"><img src="/images/screenshots/atmo_emu.png" alt="" /></p>
 
 <ul>
-  <li>Если вы случайно обновите SysNAND до последней версии системного ПО, то любая загрузка в официальную прошивку сожжёт вам предохранители и вы не сможете прошить приставку! Это относится только к методу взлома через Caffeine.</li>
+  <li>Если вы случайно обновите SysNAND до последней версии системного ПО, то любая загрузка в официальную прошивку сделает прошивку через Caffeine невозможной и вам придётся чиповать приставку!</li>
 </ul>
 </div>
 
@@ -549,28 +536,12 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
  </span>
 </span></a>
     <ul>
-      <li>Если вы собираетесь обновлять <span class="tooltip_container">
- SysNAND
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-  <span class="bottom">
-  Как правило, под этим термином подразумевается прошивка, запущенная из внутренней памяти приставки (не из EmuNAND). Приставка из магазина будет идти именно с такой прошивкой. 
-  Часто SysNAND является антонимом к EmuNAND. То есть, EmuNAND - это копия SysNAND, расположенная на карте памяти, соответственно, SysNAND - это прошивка, находящаяся в системной памяти приставки. В SysNAND не обязательно должна быть оригинальная прошивка. Главное правило - запуск из внутренней памяти приставки.
-  </span>
- </span>
-</span>, то его и запускайте. Если собираетесь обновлять <span class="tooltip_container">
- EmuNAND
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-  <span class="bottom">
-      Полная копия NAND, расположенная на карте памяти или в самом же NAND (реже). Применяется для того, чтобы оставить официальную прошивку в максимально нетронутом виде. Чаще всего применяется для того, чтобы запускать в эмунанде кастом. В случае использования программного эксплойта, который требует для запуска кастома строго определённой версии OFW, эмунанд можно служить цели запуска официальной прошивки. Например, на приставке используется аппаратная уязвимость, поэтому пользователь может использовать чистый и не изменённый NAND обновив его до последней прошивки. Это будет назваться SysNAND. Он может использоваться для официальных игр и даже для онлайна. А в эмунанде сделать полную копию сиснанда, но использовать его уже с кастомной прошивкой и без доступа к сервисам Nintendo. 
-  </span>
- </span>
-</span>, то запускайте его</li>
       <li>Если после логотипа Nintendo вы наблюдаете чёрный экран с ошибкой, значит у вас не установлены драйвера exFAT и вы проигнорировали <a href="http://customfw.xyz/format_sd" target="_blank">форматирование карты памяти в FAT32</a>, которое нужно было сделать выше</li>
     </ul>
   </li>
   <li>Откройте <a href="hbl" target="_blank">Homebrew Launcher</a></li>
   <li>Запустите <strong>Daybreak</strong> и выберите <strong>Install</strong></li>
-  <li>Перейдите в папку, в которой находится прошивка 11.0.1, скопированная ранее, и нажмите <img src="/images/buttons/A.png" alt="(A)" />
+  <li>Перейдите в папку, в которой находится прошивка 11.0.1, скопированная ранее, и нажмите (A)
     <ul>
       <li>Если вы не можете перейти в папку (папка отображается как файл), значит ваша папка имеет неверные атрибуты (чаще всего архивный). Как их исправить описано в <a href="faq" target="_blank">FAQ</a> или разделе <a href="troubleshooting" target="_blank">проблемы и их решения</a></li>
     </ul>
@@ -601,7 +572,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
  hekate
  <span class="tooltip"><i class="fas fa-caret-down"></i>
      <span class="bottom">
-         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
+         Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, запускаем различные пейлоады. Один из самых важных инструментов из тех, что мы будем использовать.
      </span>
  </span>
 </span> перейдите в раздел <strong>Tools</strong></li>
@@ -618,14 +589,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <h2 id="важно-знать">Важно знать</h2>
 
 <ul>
-  <li>Даже один единственный запуск приставки в официальную прошивку не через <span class="tooltip_container">
-  hekate
-  <span class="tooltip"><i class="fas fa-caret-down"></i>
-      <span class="bottom">
-          Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
-      </span>
-  </span>
-</span> сожжёт предохранители, которые мы пытались сохранить</li>
   <li>Если после прошивки вам предложат обновить контроллеры - обновляйте</li>
   <li>Если после обновления у вас чёрный экран после логотипа Nintendo, обновите <span class="tooltip_container">
   <a href="kefir" target="_blank">kefir</a>
@@ -645,6 +608,28 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <hr />
 
 <p class="notice--success"><a href="javascript:window.close();">Закрыть страницу</a></p>
+
+<script>
+	fuse = localStorage.getItem('fuse');
+	caffeine = localStorage.getItem('caffeine');
+
+	if (fuse == "1") {
+		document.getElementById('selector').classList.add('hide');
+		
+	}
+
+	if (caffeine == "1") {
+		document.getElementById('selector').classList.add('hide');
+		// $('div.button2').addClass('show')
+		document.getElementsByClassName('button2')[0].classList.add('show')
+		document.getElementsByClassName('button2')[0].classList.remove('hide')
+		document.getElementsByClassName('button2')[1].classList.add('show')
+		document.getElementsByClassName('button2')[1].classList.remove('hide')
+	}
+
+	localStorage.clear();
+</script>
+
 
 				
         
@@ -696,18 +681,18 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 	$(document).ready(function() {
     $('input').change(function() {
     $('div.hideble').hide();
-      if ($('input[value="button1').is(':checked')) {
-        $('div.button1').show();
-      }
-      else if ($('input[value="button2').is(':checked')) {
-        $('div.button2').show();
-      }
-      else if ($('input[value="button3').is(':checked')) {
-        $('div.button3').show();
-      }
-      else {
-        $('div.hideble').hide();
-      }
+    if ($('input[value="button1').is(':checked')) {
+      $('div.button1').show();
+    }
+    else if ($('input[value="button2').is(':checked')) {
+      $('div.button2').show();
+    }
+    else if ($('input[value="button3').is(':checked')) {
+      $('div.button3').show();
+    }
+    else {
+      $('div.hideble').hide();
+    }
     });
   });
   
